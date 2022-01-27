@@ -1,0 +1,132 @@
+.film {
+    display: flex;
+}
+
+.film__img,
+.film__content {
+    width: 21rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.film__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.film__poster {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.8rem;
+}
+
+.film__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.29;
+    color: #000000;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+}
+
+.film__name-original {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.film__rating-mpaa {
+    font-weight: 300;
+}
+
+.film__slogan {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.film__year,
+.film__film-length {
+    margin-bottom: 0.5rem;
+}
+
+.film__rating-imdb {
+    margin-bottom: 0.9rem;
+}
+
+.film__description {
+    font-size: 1.1rem;
+    flex: 1 0 auto;
+}
+
+.film__kinopoisk {
+    color: rgb(35, 131, 80);
+    text-decoration: none;
+    font-weight: 100;
+    border: 2px solid;
+    border-radius: 3px;
+    align-self: center;
+    width: 90%;
+    height: 1.5rem;
+    text-align: center;
+    transition: all 500ms ease;
+    border: none;
+    background: rgb(35, 131, 80);
+    color: #f2f2f2;
+    position: relative;
+    margin-top: 0.8rem;
+
+}
+
+.film__kinopoisk:after {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.film__kinopoisk:hover {
+    background: rgba(0, 0, 0, 0);
+    color: rgb(35, 131, 80);
+    box-shadow: inset 0 0 0 2px rgb(35, 131, 80);
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+    .film__description {
+        font-size: 1.5rem;
+    }
+    .film__title {
+        font-size: 2.5rem;
+    }
+    .film__img,
+    .film__content {
+        width: 98%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 98%;
+        /* margin: 0; */
+    }
+    
+    .film__description {
+        font-size: 3rem;
+    }
+    .film__title {
+        font-size: 4rem;
+    }
+    .film__img,
+    .film__content {
+        width: 95%;
+        padding: 10px;
+    }
+    .film {
+        flex-direction: column;
+    }
+
+}
+

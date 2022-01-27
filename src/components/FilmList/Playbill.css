@@ -1,0 +1,113 @@
+.playbill__movies {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(auto-fill, 14rem);
+    grid-template-columns:repeat(auto-fill, 14rem);
+    overflow: hidden;
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+
+}
+
+.playbill__film {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 14rem;
+    height: 14rem;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* .playbill__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.29;
+    color: #A3CC40;
+    width: 42rem;
+    margin: 0 auto;
+    line-height: 1.2em
+  } */
+
+
+.playbill__green {
+    padding: 0.4rem 0.8rem 0.5rem 0.8rem;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: all 0.2s ease;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.playbill__gray {
+    background: rgba(22, 22, 22, 0.8);
+    transition: all 0.2s ease;
+    width: 100%;
+    height: 100%;
+}
+
+/* .playbill__film {
+    /*background: url(../images/film1.jpg)  no-repeat center / cover;
+    grid-area: playbill__film;
+} */
+.playbill__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.31;
+    padding-bottom: 0.5rem;
+
+}
+
+.playbill__subtitle {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.273;
+
+}
+
+.playbill__film:hover .playbill__gray {
+    background: rgba(144, 210, 61, 0.4);
+}
+
+.playbill__film:hover .playbill__green {
+    transform: translateY(0);
+}
+@media screen and (max-width: 768px) and (min-width: 321px) {
+    .container {
+        width: 98%;
+    }
+
+    .playbill__movies {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .playbill__film {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .playbill__movies {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        width: 95%;
+    }
+
+}
+
